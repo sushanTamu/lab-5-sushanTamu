@@ -1,0 +1,1085 @@
+xrun: 22.03-s004: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun	22.03-s004: Started on Oct 06, 2023 at 22:14:03 CDT
+irun
+	-f run.f
+		+access+rwc
+		-timescale 1ns/1ps
+		-input waves.tcl
+		-uvmhome /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv
+		+UVM_VERBOSITY=UVM_LOW
+		-f file_list.f
+			-incdir ../tb
+			-incdir ../tests
+			../tb/top.sv
+	+UVM_TESTNAME=mix_sequence_test
+	-svseed 52
+
+   User defined plus("+") options:
+	+UVM_VERBOSITY=UVM_LOW
+
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xrun: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,13): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,1): cds.lib Invalid environment variable ''.
+DEFINE      basic                   $CDK_DIR/lib/basic
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,2): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Analog_Parts 	    $CDK_DIR/lib/NCSU_Analog_Parts
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,3): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_Digital_Parts 	    $CDK_DIR/lib/NCSU_Digital_Parts
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,4): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami06      $CDK_DIR/lib/NCSU_TechLib_ami06
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_ami16      $CDK_DIR/lib/NCSU_TechLib_ami16
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,7): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_hp06       $CDK_DIR/lib/NCSU_TechLib_hp06
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,8): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02     $CDK_DIR/lib/NCSU_TechLib_tsmc02
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc02d    $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03     $CDK_DIR/lib/NCSU_TechLib_tsmc03
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,11): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc03d    $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,12): cds.lib Invalid environment variable ''.
+DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+|
+xmsim: *W,DLCVAR (/home/grads/s/sushan_1201/cds.lib,13): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.top:sv .................... Done
+SVSEED set from command line: 52
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/coe/cadence/XCELIUM/tools/xcelium/files/xmsimrc
+xcelium> source /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/files/tcl/uvm_sim.tcl
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create top -all -memories -depth all -tasks -functions -all -database waves -waveform
+xmsim: *W,PRFRTNEV: (-FUNCTION) Database must be opened in -EVENT mode to capture calling scope data.
+xmsim: *E,PRNONE: No new objects to probe in scope top.
+xcelium> 
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (22.03-s004)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO ../tb/top.sv(23) @ 0: reporter [TOP] Starting test
+UVM_INFO @ 0: reporter [RNTST] Running test mix_sequence_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------
+Name                   Type                    Size  Value
+----------------------------------------------------------
+uvm_test_top           mix_sequence_test       -     @2631
+  driver               htax_tx_driver_c        -     @3332
+    rsp_port           uvm_analysis_port       -     @3431
+    seq_item_port      uvm_seq_item_pull_port  -     @3382
+  sequencer            htax_sequencer_c        -     @2693
+    rsp_export         uvm_analysis_export     -     @2751
+    seq_item_export    uvm_seq_item_pull_imp   -     @3301
+    arbitration_queue  array                   0     -    
+    lock_queue         array                   0     -    
+    num_last_reqs      integral                32    'd1  
+    num_last_rsps      integral                32    'd1  
+----------------------------------------------------------
+
+UVM_INFO ../tests/mix_sequence_test.sv(61) @ 0: uvm_test_top [mix_sequence_test] Starting Mix Sequence Test
+xmsim: *W,OLDURR: The default algorithm for $urandom_range and randcase is used. It can have distribution problems..
+UVM_INFO ../tb/htax_seqs.sv(40) @ 0: uvm_test_top.sequencer@@fix_dest_port_seq_ [fix_dest_port_seq] Executing fix destination port sequence with 5 transactions
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+---------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                    
+---------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3565                                    
+  delay                        integral       32    'h4                                      
+  dest_port                    integral       32    'h1                                      
+  vc                           integral       2     'h3                                      
+  length                       integral       32    'h24                                     
+  data                         da(integral)   36    -                                        
+    [0]                        integral       64    'hf46cbec615d2f75c                       
+    [1]                        integral       64    'h8b6339a0e8198fb1                       
+    [2]                        integral       64    'h8de8fbd12fec9b44                       
+    [3]                        integral       64    'h2d42088a5ed5a18e                       
+    [4]                        integral       64    'h57836e85868f6c03                       
+    ...                        ...            ...   ...                                      
+    [31]                       integral       64    'h653ac7f66ce1b3a0                       
+    [32]                       integral       64    'ha40a4e15b365a2ab                       
+    [33]                       integral       64    'he73602d1a86850ec                       
+    [34]                       integral       64    'hb212eb7a5603fbd8                       
+    [35]                       integral       64    'hd4cf5aff41900bf3                       
+  begin_time                   time           64    0                                        
+  depth                        int            32    'd2                                      
+  parent sequence (name)       string         18    fix_dest_port_seq_                       
+  parent sequence (full name)  string         41    uvm_test_top.sequencer.fix_dest_port_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                   
+---------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+---------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                    
+---------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3709                                    
+  delay                        integral       32    'h4                                      
+  dest_port                    integral       32    'h1                                      
+  vc                           integral       2     'h2                                      
+  length                       integral       32    'h28                                     
+  data                         da(integral)   40    -                                        
+    [0]                        integral       64    'h1ec04d148822569b                       
+    [1]                        integral       64    'he7eacec4f8b6a84                        
+    [2]                        integral       64    'ha61bf358660d40d1                       
+    [3]                        integral       64    'h3dd9a1868d0b5aed                       
+    [4]                        integral       64    'h9c7b5f10934b7bfb                       
+    ...                        ...            ...   ...                                      
+    [35]                       integral       64    'h8a8fa202027ce288                       
+    [36]                       integral       64    'h1c198137d65e9b2d                       
+    [37]                       integral       64    'h95781feda0a6926                        
+    [38]                       integral       64    'h9eec1a0d6b0f9de7                       
+    [39]                       integral       64    'hd695e680108894d6                       
+  begin_time                   time           64    0                                        
+  depth                        int            32    'd2                                      
+  parent sequence (name)       string         18    fix_dest_port_seq_                       
+  parent sequence (full name)  string         41    uvm_test_top.sequencer.fix_dest_port_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                   
+---------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+---------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                    
+---------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3724                                    
+  delay                        integral       32    'h10                                     
+  dest_port                    integral       32    'h1                                      
+  vc                           integral       2     'h1                                      
+  length                       integral       32    'he                                      
+  data                         da(integral)   14    -                                        
+    [0]                        integral       64    'h322ddc9c499f8c4b                       
+    [1]                        integral       64    'h2577959f3baf1720                       
+    [2]                        integral       64    'h485fb1e939547aba                       
+    [3]                        integral       64    'h5470d360e01b4422                       
+    [4]                        integral       64    'h89a933a66de9187b                       
+    ...                        ...            ...   ...                                      
+    [9]                        integral       64    'h716d18c3b178629f                       
+    [10]                       integral       64    'hd0b368fb48b7d7d7                       
+    [11]                       integral       64    'he1b74645280d7a06                       
+    [12]                       integral       64    'h98710b70e2e105ab                       
+    [13]                       integral       64    'h873644b8147b9ee9                       
+  begin_time                   time           64    0                                        
+  depth                        int            32    'd2                                      
+  parent sequence (name)       string         18    fix_dest_port_seq_                       
+  parent sequence (full name)  string         41    uvm_test_top.sequencer.fix_dest_port_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                   
+---------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+---------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                    
+---------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3679                                    
+  delay                        integral       32    'hf                                      
+  dest_port                    integral       32    'h1                                      
+  vc                           integral       2     'h3                                      
+  length                       integral       32    'h14                                     
+  data                         da(integral)   20    -                                        
+    [0]                        integral       64    'h7246da1bf3edf68b                       
+    [1]                        integral       64    'hc373d0bc12dd1e90                       
+    [2]                        integral       64    'h6496f95f3162b3d4                       
+    [3]                        integral       64    'hdc8e296b6a7ff592                       
+    [4]                        integral       64    'h916fb24d3d7ad26d                       
+    ...                        ...            ...   ...                                      
+    [15]                       integral       64    'h44d1d5e77891570f                       
+    [16]                       integral       64    'h41251dcde2256377                       
+    [17]                       integral       64    'h3aaa554ac4df0a5a                       
+    [18]                       integral       64    'h8c263a22fc6876ee                       
+    [19]                       integral       64    'h7ab0941f90664cd2                       
+  begin_time                   time           64    0                                        
+  depth                        int            32    'd2                                      
+  parent sequence (name)       string         18    fix_dest_port_seq_                       
+  parent sequence (full name)  string         41    uvm_test_top.sequencer.fix_dest_port_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                   
+---------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+---------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                    
+---------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3703                                    
+  delay                        integral       32    'h14                                     
+  dest_port                    integral       32    'h1                                      
+  vc                           integral       2     'h2                                      
+  length                       integral       32    'h25                                     
+  data                         da(integral)   37    -                                        
+    [0]                        integral       64    'hbc4c509dda57e55f                       
+    [1]                        integral       64    'h77f0e4009526644a                       
+    [2]                        integral       64    'hda83e9aa0c37b086                       
+    [3]                        integral       64    'h716689450cb61e13                       
+    [4]                        integral       64    'h97619dd3152c6899                       
+    ...                        ...            ...   ...                                      
+    [32]                       integral       64    'h32d9b7caf443121e                       
+    [33]                       integral       64    'ha41bfeff95cac03d                       
+    [34]                       integral       64    'h5f46bfb6918cf084                       
+    [35]                       integral       64    'h447db6eb4008dd0f                       
+    [36]                       integral       64    'haa8b0a8b7fae56f4                       
+  begin_time                   time           64    0                                        
+  depth                        int            32    'd2                                      
+  parent sequence (name)       string         18    fix_dest_port_seq_                       
+  parent sequence (full name)  string         41    uvm_test_top.sequencer.fix_dest_port_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                   
+---------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_seqs.sv(66) @ 0: uvm_test_top.sequencer@@short_packet_seq_ [short_packet_seq] Executing length of 3 - 10 sequence with 5 transactions
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                   
+--------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3620                                   
+  delay                        integral       32    'h14                                    
+  dest_port                    integral       32    'h1                                     
+  vc                           integral       2     'h2                                     
+  length                       integral       32    'ha                                     
+  data                         da(integral)   10    -                                       
+    [0]                        integral       64    'h9cb20067ddeefd6a                      
+    [1]                        integral       64    'h374640077de9f336                      
+    [2]                        integral       64    'h89448025cd278e00                      
+    [3]                        integral       64    'hc7236c6aed6d110e                      
+    [4]                        integral       64    'h3eace0b0a56ee310                      
+    [5]                        integral       64    'h52df292a93872a96                      
+    [6]                        integral       64    'hac03ff6614a1770b                      
+    [7]                        integral       64    'h59703c83691b31c0                      
+    [8]                        integral       64    'h5160c65dc467a9e1                      
+    [9]                        integral       64    'hdc2cf7c007ba7e5                       
+  begin_time                   time           64    0                                       
+  depth                        int            32    'd2                                     
+  parent sequence (name)       string         17    short_packet_seq_                       
+  parent sequence (full name)  string         40    uvm_test_top.sequencer.short_packet_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                  
+--------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                   
+--------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3726                                   
+  delay                        integral       32    'ha                                     
+  dest_port                    integral       32    'h0                                     
+  vc                           integral       2     'h3                                     
+  length                       integral       32    'ha                                     
+  data                         da(integral)   10    -                                       
+    [0]                        integral       64    'h2213b183e8e52532                      
+    [1]                        integral       64    'h784eae59876b09bb                      
+    [2]                        integral       64    'h79c4f676cd9f9e8a                      
+    [3]                        integral       64    'h261de8d35fb26cb                       
+    [4]                        integral       64    'h112aa0f6af4b0b1b                      
+    [5]                        integral       64    'h294ac0ae8289924e                      
+    [6]                        integral       64    'h5b99e08ec8f6e73a                      
+    [7]                        integral       64    'h11cfe0b19f3e36a5                      
+    [8]                        integral       64    'h29294885a828722f                      
+    [9]                        integral       64    'ha0f12b7671b4f76                       
+  begin_time                   time           64    0                                       
+  depth                        int            32    'd2                                     
+  parent sequence (name)       string         17    short_packet_seq_                       
+  parent sequence (full name)  string         40    uvm_test_top.sequencer.short_packet_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                  
+--------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                   
+--------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3678                                   
+  delay                        integral       32    'h2                                     
+  dest_port                    integral       32    'h1                                     
+  vc                           integral       2     'h2                                     
+  length                       integral       32    'ha                                     
+  data                         da(integral)   10    -                                       
+    [0]                        integral       64    'h39ebbf31f0e9eeb4                      
+    [1]                        integral       64    'h469e93aac3813bd                       
+    [2]                        integral       64    'hee0c4e2c1cd9c45e                      
+    [3]                        integral       64    'h65337056685dd564                      
+    [4]                        integral       64    'he2325e13f847ca26                      
+    [5]                        integral       64    'h90e02b85fdee057d                      
+    [6]                        integral       64    'hc2c706513e5b6e31                      
+    [7]                        integral       64    'hdd542babf69a97e3                      
+    [8]                        integral       64    'h2cbf8676bd725672                      
+    [9]                        integral       64    'hfb08f9c53ca26180                      
+  begin_time                   time           64    0                                       
+  depth                        int            32    'd2                                     
+  parent sequence (name)       string         17    short_packet_seq_                       
+  parent sequence (full name)  string         40    uvm_test_top.sequencer.short_packet_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                  
+--------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                   
+--------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3749                                   
+  delay                        integral       32    'hb                                     
+  dest_port                    integral       32    'h2                                     
+  vc                           integral       2     'h3                                     
+  length                       integral       32    'ha                                     
+  data                         da(integral)   10    -                                       
+    [0]                        integral       64    'h7accff96fab01f0e                      
+    [1]                        integral       64    'h6209cee5fbc40e8b                      
+    [2]                        integral       64    'h8aba98b60538251b                      
+    [3]                        integral       64    'hd2cdc06ec41b0e9c                      
+    [4]                        integral       64    'hf598471a54bb03f1                      
+    [5]                        integral       64    'h3500e2a2cd736e5e                      
+    [6]                        integral       64    'hf83fb10ee770de14                      
+    [7]                        integral       64    'h5318c700d63e7d5e                      
+    [8]                        integral       64    'h2d73c3b739514485                      
+    [9]                        integral       64    'h32b7e689460fc951                      
+  begin_time                   time           64    0                                       
+  depth                        int            32    'd2                                     
+  parent sequence (name)       string         17    short_packet_seq_                       
+  parent sequence (full name)  string         40    uvm_test_top.sequencer.short_packet_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                  
+--------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                   
+--------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3642                                   
+  delay                        integral       32    'he                                     
+  dest_port                    integral       32    'h1                                     
+  vc                           integral       2     'h3                                     
+  length                       integral       32    'ha                                     
+  data                         da(integral)   10    -                                       
+    [0]                        integral       64    'hcaa4184465aca8d9                      
+    [1]                        integral       64    'h5de13664365687be                      
+    [2]                        integral       64    'hc0ef83f96f5312bf                      
+    [3]                        integral       64    'h91ce4a48fa820d25                      
+    [4]                        integral       64    'h8975ae31153d800b                      
+    [5]                        integral       64    'h4033b3450ba66faa                      
+    [6]                        integral       64    'h86bc6f3be2f70237                      
+    [7]                        integral       64    'h1ad379d12b875941                      
+    [8]                        integral       64    'ha04987639749281                       
+    [9]                        integral       64    'h70515dd61eb8de44                      
+  begin_time                   time           64    0                                       
+  depth                        int            32    'd2                                     
+  parent sequence (name)       string         17    short_packet_seq_                       
+  parent sequence (full name)  string         40    uvm_test_top.sequencer.short_packet_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                  
+--------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_seqs.sv(94) @ 0: uvm_test_top.sequencer@@long_packet_short_delay_seq_ [long_packet_short_delay_seq] Executing fix length and delay sequence with 5 transactions
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                              
+-------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3565                                              
+  delay                        integral       32    'h4                                                
+  dest_port                    integral       32    'h3                                                
+  vc                           integral       2     'h3                                                
+  length                       integral       32    'h28                                               
+  data                         da(integral)   40    -                                                  
+    [0]                        integral       64    'hc6087c154aab65c4                                 
+    [1]                        integral       64    'h3ede538cc54875c0                                 
+    [2]                        integral       64    'hedc28968fbec96c                                  
+    [3]                        integral       64    'h6614e5905c74da9c                                 
+    [4]                        integral       64    'hd6a488cca5c97f4d                                 
+    ...                        ...            ...   ...                                                
+    [35]                       integral       64    'h84245e3ad6345e47                                 
+    [36]                       integral       64    'haf798e300a0143ff                                 
+    [37]                       integral       64    'h5dd5d9f3f352b300                                 
+    [38]                       integral       64    'h8a3b3c43adcafffb                                 
+    [39]                       integral       64    'h6d0e999262dd6c5a                                 
+  begin_time                   time           64    0                                                  
+  depth                        int            32    'd2                                                
+  parent sequence (name)       string         28    long_packet_short_delay_seq_                       
+  parent sequence (full name)  string         51    uvm_test_top.sequencer.long_packet_short_delay_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                             
+-------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                              
+-------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3752                                              
+  delay                        integral       32    'h4                                                
+  dest_port                    integral       32    'h0                                                
+  vc                           integral       2     'h3                                                
+  length                       integral       32    'h28                                               
+  data                         da(integral)   40    -                                                  
+    [0]                        integral       64    'hf69f7bcc52afdc40                                 
+    [1]                        integral       64    'hc44004a8d03e9d88                                 
+    [2]                        integral       64    'h4fe496e8993fdff1                                 
+    [3]                        integral       64    'h56955be15ceceb26                                 
+    [4]                        integral       64    'h11e2faefee579509                                 
+    ...                        ...            ...   ...                                                
+    [35]                       integral       64    'hc5099f8cdde17691                                 
+    [36]                       integral       64    'h24f23186ec590c56                                 
+    [37]                       integral       64    'hd33bb82954f554eb                                 
+    [38]                       integral       64    'h32f146a106ea0185                                 
+    [39]                       integral       64    'h4fe490fbc42e5287                                 
+  begin_time                   time           64    0                                                  
+  depth                        int            32    'd2                                                
+  parent sequence (name)       string         28    long_packet_short_delay_seq_                       
+  parent sequence (full name)  string         51    uvm_test_top.sequencer.long_packet_short_delay_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                             
+-------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                              
+-------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3776                                              
+  delay                        integral       32    'h4                                                
+  dest_port                    integral       32    'h0                                                
+  vc                           integral       2     'h2                                                
+  length                       integral       32    'h28                                               
+  data                         da(integral)   40    -                                                  
+    [0]                        integral       64    'hd8c2ee2d89d4be4b                                 
+    [1]                        integral       64    'hdc181255d843670a                                 
+    [2]                        integral       64    'hdbffd1c9be0ce9f3                                 
+    [3]                        integral       64    'hcadcb397ac2710f9                                 
+    [4]                        integral       64    'h74b48cb820ba43a3                                 
+    ...                        ...            ...   ...                                                
+    [35]                       integral       64    'hd70b732444ae9f2a                                 
+    [36]                       integral       64    'h25aaa9790073f1e7                                 
+    [37]                       integral       64    'h6979d86f372bdb6d                                 
+    [38]                       integral       64    'h9214cb4e7d56b3b5                                 
+    [39]                       integral       64    'hdd3430f29802dedd                                 
+  begin_time                   time           64    0                                                  
+  depth                        int            32    'd2                                                
+  parent sequence (name)       string         28    long_packet_short_delay_seq_                       
+  parent sequence (full name)  string         51    uvm_test_top.sequencer.long_packet_short_delay_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                             
+-------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                              
+-------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3746                                              
+  delay                        integral       32    'h4                                                
+  dest_port                    integral       32    'h0                                                
+  vc                           integral       2     'h3                                                
+  length                       integral       32    'h28                                               
+  data                         da(integral)   40    -                                                  
+    [0]                        integral       64    'h616e69c287ba7343                                 
+    [1]                        integral       64    'h1cf952bae2099764                                 
+    [2]                        integral       64    'h399fb7750d98e4c1                                 
+    [3]                        integral       64    'h678afe21948571b7                                 
+    [4]                        integral       64    'he24edcd07c777cdb                                 
+    ...                        ...            ...   ...                                                
+    [35]                       integral       64    'h9077bd90067bc762                                 
+    [36]                       integral       64    'h49e8b3b3aadb093f                                 
+    [37]                       integral       64    'h5221cafbb6db556d                                 
+    [38]                       integral       64    'h3f0a78be34b515fd                                 
+    [39]                       integral       64    'hfbb6b3149d68f175                                 
+  begin_time                   time           64    0                                                  
+  depth                        int            32    'd2                                                
+  parent sequence (name)       string         28    long_packet_short_delay_seq_                       
+  parent sequence (full name)  string         51    uvm_test_top.sequencer.long_packet_short_delay_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                             
+-------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                              
+-------------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3720                                              
+  delay                        integral       32    'h4                                                
+  dest_port                    integral       32    'h2                                                
+  vc                           integral       2     'h1                                                
+  length                       integral       32    'h28                                               
+  data                         da(integral)   40    -                                                  
+    [0]                        integral       64    'hb48598831b907e81                                 
+    [1]                        integral       64    'h363418e51b8e64b                                  
+    [2]                        integral       64    'hbbe8fd2f579e5b43                                 
+    [3]                        integral       64    'h425ffad3490284fc                                 
+    [4]                        integral       64    'h84850552f2646d25                                 
+    ...                        ...            ...   ...                                                
+    [35]                       integral       64    'hbfad52e5931a5a75                                 
+    [36]                       integral       64    'hadf25f4cb735183b                                 
+    [37]                       integral       64    'h6c16b9c463010eed                                 
+    [38]                       integral       64    'h53548d224f5e59e2                                 
+    [39]                       integral       64    'h81b00ebad83872d9                                 
+  begin_time                   time           64    0                                                  
+  depth                        int            32    'd2                                                
+  parent sequence (name)       string         28    long_packet_short_delay_seq_                       
+  parent sequence (full name)  string         51    uvm_test_top.sequencer.long_packet_short_delay_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                             
+-------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_seqs.sv(123) @ 0: uvm_test_top.sequencer@@med_packet_fix_vc_seq_ [med_packet_fix_vc_seq] Executing length and VC sequence with 5 transactions
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                        
+-------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3650                                        
+  delay                        integral       32    'h7                                          
+  dest_port                    integral       32    'h1                                          
+  vc                           integral       2     'h1                                          
+  length                       integral       32    'h27                                         
+  data                         da(integral)   39    -                                            
+    [0]                        integral       64    'h2d1e4345cfc6eb53                           
+    [1]                        integral       64    'heac074e82af41996                           
+    [2]                        integral       64    'h9dd5ceeb4f48b3be                           
+    [3]                        integral       64    'h4f0a4b3ec2bab9ef                           
+    [4]                        integral       64    'h1219bbec87d20eab                           
+    ...                        ...            ...   ...                                          
+    [34]                       integral       64    'hccd45ca967554831                           
+    [35]                       integral       64    'h1066b3c1b6a14b16                           
+    [36]                       integral       64    'h24287e9aba4f9f65                           
+    [37]                       integral       64    'h8f6f704cfb91ba70                           
+    [38]                       integral       64    'h61e1ac21c365e4a6                           
+  begin_time                   time           64    0                                            
+  depth                        int            32    'd2                                          
+  parent sequence (name)       string         22    med_packet_fix_vc_seq_                       
+  parent sequence (full name)  string         45    uvm_test_top.sequencer.med_packet_fix_vc_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                       
+-------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                        
+-------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3778                                        
+  delay                        integral       32    'ha                                          
+  dest_port                    integral       32    'h3                                          
+  vc                           integral       2     'h1                                          
+  length                       integral       32    'h27                                         
+  data                         da(integral)   39    -                                            
+    [0]                        integral       64    'h3cc73029f5598193                           
+    [1]                        integral       64    'h3b488bd46e8a0d7                            
+    [2]                        integral       64    'he8b0051616c3004c                           
+    [3]                        integral       64    'hd71e52bc57db41af                           
+    [4]                        integral       64    'hf04bc7b7a6461f76                           
+    ...                        ...            ...   ...                                          
+    [34]                       integral       64    'hd0616446380a65bc                           
+    [35]                       integral       64    'h574790a5cdd470f6                           
+    [36]                       integral       64    'ha2b02f6cc80e0065                           
+    [37]                       integral       64    'hc327146a28928db                            
+    [38]                       integral       64    'h8240726903809d79                           
+  begin_time                   time           64    0                                            
+  depth                        int            32    'd2                                          
+  parent sequence (name)       string         22    med_packet_fix_vc_seq_                       
+  parent sequence (full name)  string         45    uvm_test_top.sequencer.med_packet_fix_vc_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                       
+-------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                        
+-------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3802                                        
+  delay                        integral       32    'h13                                         
+  dest_port                    integral       32    'h0                                          
+  vc                           integral       2     'h1                                          
+  length                       integral       32    'h27                                         
+  data                         da(integral)   39    -                                            
+    [0]                        integral       64    'h44cbf9acd77cf3f4                           
+    [1]                        integral       64    'h288192bf5ec0ae85                           
+    [2]                        integral       64    'h37ea2aeaa2de3b2d                           
+    [3]                        integral       64    'h9810155cc229965                            
+    [4]                        integral       64    'h394886c20917b13f                           
+    ...                        ...            ...   ...                                          
+    [34]                       integral       64    'h372e8cde45e7a5af                           
+    [35]                       integral       64    'h6b627636dfd6448e                           
+    [36]                       integral       64    'h84e6b5eec8c67858                           
+    [37]                       integral       64    'h829f237638c74921                           
+    [38]                       integral       64    'h5614febe62a42226                           
+  begin_time                   time           64    0                                            
+  depth                        int            32    'd2                                          
+  parent sequence (name)       string         22    med_packet_fix_vc_seq_                       
+  parent sequence (full name)  string         45    uvm_test_top.sequencer.med_packet_fix_vc_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                       
+-------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                        
+-------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3736                                        
+  delay                        integral       32    'he                                          
+  dest_port                    integral       32    'h2                                          
+  vc                           integral       2     'h1                                          
+  length                       integral       32    'h27                                         
+  data                         da(integral)   39    -                                            
+    [0]                        integral       64    'h49df64e96b2cd900                           
+    [1]                        integral       64    'h689a903d090f18c4                           
+    [2]                        integral       64    'hd5e666067a0c429d                           
+    [3]                        integral       64    'h25b848ccc430d27f                           
+    [4]                        integral       64    'hc165dccd937c62af                           
+    ...                        ...            ...   ...                                          
+    [34]                       integral       64    'hfd1bc5c4c6db9a08                           
+    [35]                       integral       64    'hb1407901c2f4aa6b                           
+    [36]                       integral       64    'he7b1210754bec4e8                           
+    [37]                       integral       64    'h1659864eefddab77                           
+    [38]                       integral       64    'h9c6d313c78352121                           
+  begin_time                   time           64    0                                            
+  depth                        int            32    'd2                                          
+  parent sequence (name)       string         22    med_packet_fix_vc_seq_                       
+  parent sequence (full name)  string         45    uvm_test_top.sequencer.med_packet_fix_vc_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                       
+-------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+-------------------------------------------------------------------------------------------------
+Name                           Type           Size  Value                                        
+-------------------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3795                                        
+  delay                        integral       32    'ha                                          
+  dest_port                    integral       32    'h3                                          
+  vc                           integral       2     'h1                                          
+  length                       integral       32    'h27                                         
+  data                         da(integral)   39    -                                            
+    [0]                        integral       64    'hb98eb3d0be4407c1                           
+    [1]                        integral       64    'hb2a006c0ef790798                           
+    [2]                        integral       64    'h8a63794bfc558856                           
+    [3]                        integral       64    'h9ba539169f05cf31                           
+    [4]                        integral       64    'h563e3ca735b28b31                           
+    ...                        ...            ...   ...                                          
+    [34]                       integral       64    'h89ba58d754b7b782                           
+    [35]                       integral       64    'hbd9a87fcf22a3fc1                           
+    [36]                       integral       64    'h93d6da86b8c87081                           
+    [37]                       integral       64    'h3102ca3309d29a40                           
+    [38]                       integral       64    'hd73cb2a08c7f3586                           
+  begin_time                   time           64    0                                            
+  depth                        int            32    'd2                                          
+  parent sequence (name)       string         22    med_packet_fix_vc_seq_                       
+  parent sequence (full name)  string         45    uvm_test_top.sequencer.med_packet_fix_vc_seq_
+  sequencer                    string         22    uvm_test_top.sequencer                       
+-------------------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_seqs.sv(156) @ 0: uvm_test_top.sequencer@@random_seq_ [random_seq] Executing default constraints sequence with 5 transactions
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------
+Name                           Type           Size  Value                             
+--------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3657                             
+  delay                        integral       32    'h8                               
+  dest_port                    integral       32    'h1                               
+  vc                           integral       2     'h1                               
+  length                       integral       32    'h22                              
+  data                         da(integral)   34    -                                 
+    [0]                        integral       64    'h57470f06ec4e333d                
+    [1]                        integral       64    'he729c54be69857d0                
+    [2]                        integral       64    'h5f8f6a71392e9521                
+    [3]                        integral       64    'heafa765fbfb33f2f                
+    [4]                        integral       64    'h624d4fe084631233                
+    ...                        ...            ...   ...                               
+    [29]                       integral       64    'h8fa12adc53d6151e                
+    [30]                       integral       64    'h4c446fcb720b0f36                
+    [31]                       integral       64    'h6fea340b61ed816a                
+    [32]                       integral       64    'h36ee88d66dbd2f2c                
+    [33]                       integral       64    'hb3d555fb57988ac9                
+  begin_time                   time           64    0                                 
+  depth                        int            32    'd2                               
+  parent sequence (name)       string         11    random_seq_                       
+  parent sequence (full name)  string         34    uvm_test_top.sequencer.random_seq_
+  sequencer                    string         22    uvm_test_top.sequencer            
+--------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------
+Name                           Type           Size  Value                             
+--------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3804                             
+  delay                        integral       32    'h11                              
+  dest_port                    integral       32    'h1                               
+  vc                           integral       2     'h3                               
+  length                       integral       32    'h18                              
+  data                         da(integral)   24    -                                 
+    [0]                        integral       64    'h984f7d58f5cf49c2                
+    [1]                        integral       64    'hd7aa3b9be710685a                
+    [2]                        integral       64    'h9acddc9481bcaadd                
+    [3]                        integral       64    'hbd7836a6c98f673a                
+    [4]                        integral       64    'h38b8e764736579ea                
+    ...                        ...            ...   ...                               
+    [19]                       integral       64    'h651949a7a5423448                
+    [20]                       integral       64    'h13645432a3057f25                
+    [21]                       integral       64    'hc019bcafea2b7243                
+    [22]                       integral       64    'h77ca1cdea304cd8b                
+    [23]                       integral       64    'h7690fb7d9312eb91                
+  begin_time                   time           64    0                                 
+  depth                        int            32    'd2                               
+  parent sequence (name)       string         11    random_seq_                       
+  parent sequence (full name)  string         34    uvm_test_top.sequencer.random_seq_
+  sequencer                    string         22    uvm_test_top.sequencer            
+--------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------
+Name                           Type           Size  Value                             
+--------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3780                             
+  delay                        integral       32    'h6                               
+  dest_port                    integral       32    'h2                               
+  vc                           integral       2     'h3                               
+  length                       integral       32    'h13                              
+  data                         da(integral)   19    -                                 
+    [0]                        integral       64    'h246ab8391a9c53c4                
+    [1]                        integral       64    'h4bf19351364a8e2e                
+    [2]                        integral       64    'hfd9f6e5db41f5977                
+    [3]                        integral       64    'h8e7ff3c3128c2645                
+    [4]                        integral       64    'ha04e523beec9ed19                
+    ...                        ...            ...   ...                               
+    [14]                       integral       64    'h98e3116767154c83                
+    [15]                       integral       64    'hde5817e28bacd53                 
+    [16]                       integral       64    'h915edc05ff513f4c                
+    [17]                       integral       64    'hce1cd704af38bce                 
+    [18]                       integral       64    'h13a02d2b56b1ade3                
+  begin_time                   time           64    0                                 
+  depth                        int            32    'd2                               
+  parent sequence (name)       string         11    random_seq_                       
+  parent sequence (full name)  string         34    uvm_test_top.sequencer.random_seq_
+  sequencer                    string         22    uvm_test_top.sequencer            
+--------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------
+Name                           Type           Size  Value                             
+--------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3828                             
+  delay                        integral       32    'h3                               
+  dest_port                    integral       32    'h0                               
+  vc                           integral       2     'h2                               
+  length                       integral       32    'h22                              
+  data                         da(integral)   34    -                                 
+    [0]                        integral       64    'hfb98bfa95ab55142                
+    [1]                        integral       64    'h43ffcc6cd446c94b                
+    [2]                        integral       64    'h88041fcdd056a0ed                
+    [3]                        integral       64    'h5e11adb59aa97c50                
+    [4]                        integral       64    'h990d9064f6906bc0                
+    ...                        ...            ...   ...                               
+    [29]                       integral       64    'h17cd289ddbb14f85                
+    [30]                       integral       64    'ha490a1ec5cfb52de                
+    [31]                       integral       64    'hfaf0238351bbd8fa                
+    [32]                       integral       64    'h608648b0f07b3d06                
+    [33]                       integral       64    'he9dad0c38c000492                
+  begin_time                   time           64    0                                 
+  depth                        int            32    'd2                               
+  parent sequence (name)       string         11    random_seq_                       
+  parent sequence (full name)  string         34    uvm_test_top.sequencer.random_seq_
+  sequencer                    string         22    uvm_test_top.sequencer            
+--------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO ../tb/htax_tx_driver_c.sv(42) @ 0: uvm_test_top.driver [htax_tx_driver_c] Input Data Packet to DUT : 
+--------------------------------------------------------------------------------------
+Name                           Type           Size  Value                             
+--------------------------------------------------------------------------------------
+req                            htax_packet_c  -     @3658                             
+  delay                        integral       32    'ha                               
+  dest_port                    integral       32    'h1                               
+  vc                           integral       2     'h2                               
+  length                       integral       32    'hd                               
+  data                         da(integral)   13    -                                 
+    [0]                        integral       64    'h7de20563a4bac7c4                
+    [1]                        integral       64    'h1ed4c91e88c3dc8f                
+    [2]                        integral       64    'h2a3a484f46439138                
+    [3]                        integral       64    'h35c343e12f81dc2a                
+    [4]                        integral       64    'h4fa1d9fbfc825746                
+    ...                        ...            ...   ...                               
+    [8]                        integral       64    'hb816ad419fa308cd                
+    [9]                        integral       64    'he74508413ea8204                 
+    [10]                       integral       64    'h487269e9c71142e3                
+    [11]                       integral       64    'he66219edd2580c85                
+    [12]                       integral       64    'h5516cb92257b2a99                
+  begin_time                   time           64    0                                 
+  depth                        int            32    'd2                               
+  parent sequence (name)       string         11    random_seq_                       
+  parent sequence (full name)  string         34    uvm_test_top.sequencer.random_seq_
+  sequencer                    string         22    uvm_test_top.sequencer            
+--------------------------------------------------------------------------------------
+
+UVM_INFO ../tb/htax_tx_driver_c.sv(43) @ 0: uvm_test_top.driver [htax_tx_driver_c] Ended Driving Data Packet to DUT
+UVM_INFO /opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 5000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   60
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[TOP]     1
+[UVMTOP]     1
+[fix_dest_port_seq]     1
+[htax_tx_driver_c]    50
+[long_packet_short_delay_seq]     1
+[med_packet_fix_vc_seq]     1
+[mix_sequence_test]     1
+[random_seq]     1
+[short_packet_seq]     1
+Simulation complete via $finish(1) at time 5 US + 44
+/opt/coe/cadence/XCELIUM/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun	22.03-s004: Exiting on Oct 06, 2023 at 22:14:04 CDT  (total: 00:00:01)

@@ -1,0 +1,23 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(01Oct2023:17:05:18):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s2::(02Oct2023:10:49:51):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s3::(02Oct2023:11:01:20):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s4::(02Oct2023:11:06:18):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s5::(02Oct2023:11:08:57):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s6::(02Oct2023:11:12:22):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s7::(02Oct2023:11:14:17):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 2 )
+s8::(02Oct2023:11:15:16):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 3 )
+s9::(02Oct2023:11:16:30):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 40 )
+s10::(03Oct2023:00:30:53):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s11::(03Oct2023:00:31:34):( irun -f run.f +UVM_TESTNAME=mix_sequence_test --svseed 40 )
+s12::(03Oct2023:00:31:42):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 40 )
+s13::(03Oct2023:00:31:59):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 1 )
+s14::(03Oct2023:00:32:17):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 5 )
+s15::(03Oct2023:00:32:32):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 12 )
+s16::(04Oct2023:11:53:58):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s17::(04Oct2023:11:54:52):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 15 )
+s18::(06Oct2023:22:13:40):( irun -f run.f +UVM_TESTNAME=mix_sequence_test )
+s19::(06Oct2023:22:14:03):( irun -f run.f +UVM_TESTNAME=mix_sequence_test -svseed 52 )

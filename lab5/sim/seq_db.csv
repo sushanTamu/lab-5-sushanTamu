@@ -1,0 +1,26 @@
+Sequence, dest port, vc, length, delay
+fix_dest_port_seq_, 'h1, 'h3, 'h24, 'h4
+fix_dest_port_seq_, 'h1, 'h2, 'h28, 'h4
+fix_dest_port_seq_, 'h1, 'h1, 'he, 'h10
+fix_dest_port_seq_, 'h1, 'h3, 'h14, 'hf
+fix_dest_port_seq_, 'h1, 'h2, 'h25, 'h14
+short_packet_seq_, 'h1, 'h2, 'ha, 'h14
+short_packet_seq_, 'h0, 'h3, 'ha, 'ha
+short_packet_seq_, 'h1, 'h2, 'ha, 'h2
+short_packet_seq_, 'h2, 'h3, 'ha, 'hb
+short_packet_seq_, 'h1, 'h3, 'ha, 'he
+long_packet_short_delay_seq_, 'h3, 'h3, 'h28, 'h4
+long_packet_short_delay_seq_, 'h0, 'h3, 'h28, 'h4
+long_packet_short_delay_seq_, 'h0, 'h2, 'h28, 'h4
+long_packet_short_delay_seq_, 'h0, 'h3, 'h28, 'h4
+long_packet_short_delay_seq_, 'h2, 'h1, 'h28, 'h4
+med_packet_fix_vc_seq_, 'h1, 'h1, 'h27, 'h7
+med_packet_fix_vc_seq_, 'h3, 'h1, 'h27, 'ha
+med_packet_fix_vc_seq_, 'h0, 'h1, 'h27, 'h13
+med_packet_fix_vc_seq_, 'h2, 'h1, 'h27, 'he
+med_packet_fix_vc_seq_, 'h3, 'h1, 'h27, 'ha
+random_seq_, 'h1, 'h1, 'h22, 'h8
+random_seq_, 'h1, 'h3, 'h18, 'h11
+random_seq_, 'h2, 'h3, 'h13, 'h6
+random_seq_, 'h0, 'h2, 'h22, 'h3
+random_seq_, 'h1, 'h2, 'hd, 'ha
